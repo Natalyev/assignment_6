@@ -13,6 +13,7 @@ class DeliveryPatternsTest {
     private City city() { return new City("City", List.of(new Restaurant("R1", List.of(menu())))); }
 
     @Test void caloriesMatchHandCalculation() { assertEquals(1900, city().accept(new CaloriesVisitor())); }
+    @Test void newVisitorListsLeavesWithoutElementChanges() { assertEquals(List.of("Pizza", "Box", "Water", "Cake"), city().accept(new LeafNameVisitor())); }
     @Test void subtreeCaloriesExcludeOtherRestaurants() {
         City city = new City("City", List.of(new Restaurant("A", List.of(menu())), new Restaurant("B", List.of(new Menu("Small", List.of(new Drink("Tea", 5, "")))))));
         assertEquals(1900, city.children().get(0).accept(new CaloriesVisitor()));

@@ -39,4 +39,5 @@ classDiagram
     Visitor <|.. AllergenVisitor
     Visitor <|.. LowCalorieVisitor
     Visitor <|.. JsonVisitor
+    Visitor <|.. LeafNameVisitor
 ```

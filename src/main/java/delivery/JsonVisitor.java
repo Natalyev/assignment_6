@@ -28,4 +28,5 @@ final class JsonVisitor implements Visitor<String> {
     public String visit(Combo node) { return leaf("combo", node.name(), node.calories(), node.allergen()); }
     public String visit(Drink node) { return leaf("drink", node.name(), node.calories(), node.allergen()); }
     public String visit(Dessert node) { return leaf("dessert", node.name(), node.calories(), node.allergen()); }
+    public String visit(Side node) { return leaf("side", node.name(), node.calories(), node.allergen()); }
 }

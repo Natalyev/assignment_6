@@ -9,4 +9,5 @@ final class CaloriesVisitor implements Visitor<Integer> {
     public Integer visit(Combo node) { return node.calories(); }
     public Integer visit(Drink node) { return node.calories(); }
     public Integer visit(Dessert node) { return node.calories(); }
+    public Integer visit(Side node) { return node.calories(); }
 }

@@ -8,4 +8,5 @@ interface Visitor<R> {
     R visit(Combo node);
     R visit(Drink node);
     R visit(Dessert node);
+    R visit(Side node);
 }

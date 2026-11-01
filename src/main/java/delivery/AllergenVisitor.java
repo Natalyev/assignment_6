@@ -20,4 +20,5 @@ final class AllergenVisitor implements Visitor<Set<String>> {
     public Set<String> visit(Combo node) { return add(node.allergen()); }
     public Set<String> visit(Drink node) { return add(node.allergen()); }
     public Set<String> visit(Dessert node) { return add(node.allergen()); }
+    public Set<String> visit(Side node) { return add(node.allergen()); }
 }

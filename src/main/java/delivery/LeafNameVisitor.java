@@ -16,4 +16,5 @@ final class LeafNameVisitor implements Visitor<List<String>> {
     public List<String> visit(Combo node) { return List.of(node.name()); }
     public List<String> visit(Drink node) { return List.of(node.name()); }
     public List<String> visit(Dessert node) { return List.of(node.name()); }
+    public List<String> visit(Side node) { return List.of(node.name()); }
 }

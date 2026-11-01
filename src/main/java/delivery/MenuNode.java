@@ -34,3 +34,7 @@ record Dessert(String name, int calories, String allergen) implements MenuNode {
     Dessert { Objects.requireNonNull(name); Objects.requireNonNull(allergen); if (calories < 0) throw new IllegalArgumentException(); }
     public <R> R accept(Visitor<R> visitor) { return visitor.visit(this); }
 }
+record Side(String name, int calories, String allergen) implements MenuNode {
+    Side { Objects.requireNonNull(name); Objects.requireNonNull(allergen); if (calories < 0) throw new IllegalArgumentException(); }
+    public <R> R accept(Visitor<R> visitor) { return visitor.visit(this); }
+}

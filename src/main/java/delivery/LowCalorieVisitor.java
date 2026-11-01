@@ -19,4 +19,5 @@ final class LowCalorieVisitor implements Visitor<List<MenuNode>> {
     public List<MenuNode> visit(Combo node) { return match(node, node.calories()); }
     public List<MenuNode> visit(Drink node) { return match(node, node.calories()); }
     public List<MenuNode> visit(Dessert node) { return match(node, node.calories()); }
+    public List<MenuNode> visit(Side node) { return match(node, node.calories()); }
 }

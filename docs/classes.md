@@ -30,10 +30,12 @@ classDiagram
     Menu o-- Combo
     Menu o-- Drink
     Menu o-- Dessert
+    Menu o-- Side
     MenuNode <|.. Dish
     MenuNode <|.. Combo
     MenuNode <|.. Drink
     MenuNode <|.. Dessert
+    MenuNode <|.. Side
     class Visitor~R~ { +visit(element) R }
     Visitor <|.. CaloriesVisitor
     Visitor <|.. AllergenVisitor

@@ -25,7 +25,7 @@ The CLI argument sets the producer thread count. The demo sends four batches of 
 
 ## Trade-off proof
 
-The Git history contains separate commits for adding `LeafNameVisitor` and adding `Side`. The new visitor changes its own file and its test; no element class changes. The new element changes `MenuNode.java`, the `Visitor` interface, and each concrete visitor, plus tests and the demo. Visitor is useful when new operations are common and element types are stable. If the menu gains new element types frequently, the required changes to every visitor make this design costly.
+The Git history contains separate commits for adding `LeafNameVisitor` and adding `Side`. The new visitor changes `LeafNameVisitor.java`, `DeliveryPatternsTest.java`, and `docs/classes.md`; no element class changes. The new element changes `MenuNode.java`, `Visitor.java`, all five concrete visitor files, `DeliveryPatternsTest.java`, and `docs/classes.md`. Visitor is useful when new operations are common and element types are stable. If the menu gains new element types frequently, the required changes to every visitor make this design costly.
 
 ## Tests and diagram
 

@@ -26,4 +26,4 @@ The 21 JUnit tests passed locally using Java 17 compatibility. The concurrency s
 
 ## Submission
 
-The GitHub repository URL must be added after publishing. The course asks for a meaningful two-week commit history; this repository records three genuine implementation stages and does not claim earlier work dates.
+GitHub repository: https://github.com/Natalyev/assignment_6. The course asks for a meaningful two-week commit history; this repository records genuine implementation stages and does not claim earlier work dates.

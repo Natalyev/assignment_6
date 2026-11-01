@@ -31,4 +31,4 @@ The Git history contains separate commits for adding `LeafNameVisitor` and addin
 
 `DeliveryPatternsTest` covers ordering, subscription changes from inside handlers, aggregation, the integration link, hand-calculated visitor values, JSON structure and escaping, and the concurrent exact-count stress case. UML class diagram: [docs/classes.md](docs/classes.md).
 
-For submission, publish this repository to GitHub and submit its link with the required LMS report. The assignment asks for a two-week commit history; this project records the implementation steps honestly and does not invent earlier dates.
+Repository: https://github.com/Natalyev/assignment_6. Submit this link with the required LMS report. The assignment asks for a two-week commit history; this project records the implementation steps honestly and does not invent earlier dates.
